@@ -384,7 +384,7 @@ export default function DashboardView({ data, isPending, message }) {
   if (!data) {
     return (
       <section className="hero-card">
-        <h1>Android growth and stability dashboard</h1>
+        {/* <h1>Android growth and stability dashboard</h1> */}
         <p className="hero-copy">{isPending ? "Reading Android V ANR.xlsx..." : message}</p>
       </section>
     );

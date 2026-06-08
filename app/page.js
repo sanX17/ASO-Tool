@@ -188,23 +188,6 @@ export default function HomePage() {
             <DashboardView data={dashboardData} isPending={isPending} message={dashboardMessage} />
           ) : (
             <>
-              <section className="hero-card">
-                <p className="eyebrow">Auto Reply Tool</p>
-                <h1>ASO review sentiment and auto-reply tool</h1>
-                <p className="hero-copy">{isPending ? 'Reading local workbook "ASO Reviews .xlsx"...' : reviewMessage}</p>
-                <div className="action-row">
-                  <button className="primary-button" type="button" onClick={loadLocalWorkbook}>
-                    Refresh Reviews
-                  </button>
-                  <button className="secondary-button" type="button" onClick={regenerateAllReplies}>
-                    Regenerate All
-                  </button>
-                  <button className="secondary-button" type="button" onClick={exportExcel}>
-                    Export Excel
-                  </button>
-                </div>
-              </section>
-
               <section className="summary-grid">
                 <article className="summary-card">
                   <span>Total Reviews</span>
